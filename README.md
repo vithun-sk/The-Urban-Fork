@@ -35,10 +35,15 @@ The Urban Fork website is built to represent an urban-style restaurant with a cl
 
 ## 📂 Project Structure
 Urban-Fork/
+
 │── index.html
+
 │── css/
+
 │ └── style.css
+
 │── images/
+
 │── README.md
 
 ---
