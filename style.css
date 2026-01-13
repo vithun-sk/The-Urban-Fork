@@ -1,0 +1,242 @@
+/* Reset */
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Setting Background color  */
+html {
+  background-color: goldenrod;
+}
+
+/* Page setup */
+body {
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: white;
+  text-align: center;
+}
+
+/* Header */
+/* Designing the name of the shop  */
+#shop_name {
+  background-color: black;
+  color: whitesmoke;
+  padding: 15px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 55px;
+}
+
+/* Designing the nav bars */
+
+#anchor_tags {
+  padding: 15px;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+  gap: 10px;
+  border: 2px solid black;
+
+}
+
+#anchor_tags a {
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  font-weight: 700;
+  position: block;
+}
+#anchor_tags a:hover {
+  color: rgba(201, 14, 14, 0.596);
+}
+
+/* Main */
+/* Designing Images */
+img {
+  border-bottom: 2px solid gray;
+}
+
+#about_us,
+#offer_title,
+#hour_title,
+#form_title,
+#contact_title {
+  padding: 25px;
+  text-align: left;
+}
+/* Designing About Us content */
+#about {
+  text-align: left;
+  padding: 0px 20px 20px 20px;
+  text-indent: 30px;
+  text-transform:capitalize;
+  text-shadow: 1px 1px 1px;
+}
+
+/* Designing Offers content */
+#two table {
+  font-size: x-large;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#two td {
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+/* Desinging Hours Content */
+#open_title {
+  padding: 10px;
+  text-align: center;
+  font-size: xx-large;
+}
+#hour_details {
+  font-size: x-large;
+  padding: 20px;
+}
+#three dt {
+  padding: 10px;
+  font-size: xx-large;
+}
+
+/* Designing Contact Page */
+/* Feedback */
+
+#four table {
+  padding: 10px;
+  margin-left: 50px;
+  font-size: xx-large;
+}
+#four td {
+  padding: 10px;
+}
+
+input {
+  /* Changing width and height of input box */
+  width: 200px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+}
+textarea {
+  /* Changing width and height of Textarea */
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+  
+}
+#sumbitbtn,
+#resetbtn {
+  /* Changing width and height of sumbit and reset */
+  margin-left: 50px;
+  width: 100px;
+  height: 20px;
+}
+
+/* Contact */
+#contact_details {
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* Footer */
+/* Designing Arrow button  */
+footer {
+  text-align: right;
+  padding: 30px;
+}
+#arrowbtn {
+  cursor: pointer;
+  background-color: black;
+  color: whitesmoke;
+  padding: 15px;
+  margin: 30px;
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+}
+
+/* For Tablets (iPads) */
+@media screen and (max-width: 1024px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #shop_name {
+    font-size: 45px; /* Reduce heading size */
+  }
+  #anchor_tags {
+    gap: 15px; /* Reduce spacing */
+  }
+  img {
+    height: 400px; /* Reduce image height */
+  }
+}
+
+/*  For Mobile Devices */
+@media screen and (max-width: 768px) {
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #shop_name {
+    font-size: 35px; /* Smaller heading */
+    padding: 10px;
+  }
+  #anchor_tags {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center;
+  }
+  #anchor_tags a {
+    padding: 8px;
+  }
+  #about {
+    text-shadow: 0;
+  }
+  img {
+    height: 300px; /* Adjust image size */
+  }
+  table {
+    font-size: medium; /* Reduce table text size */
+  }
+  input,
+  textarea {
+    width: 100%; /* Full width for input fields */
+  }
+}
+
+/*  For Small Mobile Screens */
+@media screen and (max-width: 480px) {
+  #two table {
+    font-size: small;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  #about {
+    text-shadow: 0;
+  }
+  #four table {
+    font-size: small;
+    margin-left: 0px;
+    padding: 0px;
+  }
+  #four td {
+    padding: 2px;
+  }
+
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
